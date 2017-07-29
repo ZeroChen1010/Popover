@@ -291,8 +291,8 @@ open class Popover: UIView {
         
         self.create()
         self.willShowHandler?()
-        self.enterAnimationWillStart()
         let origRect = self.contentView.frame
+        self.enterAnimationWillStart()
         UIView.animate(withDuration: self.animationIn, delay: 0,
                        usingSpringWithDamping: self.springDamping,
                        initialSpringVelocity: self.initialSpringVelocity,
